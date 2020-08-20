@@ -1,0 +1,26 @@
+.wrapProduct {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 20px;
+}
+
+.product {
+    width: 150px;
+}
+
+img {
+    display: block;
+}
+
+button {
+    margin-top: 15px;
+    display: block;
+}
+
+.basket {
+margin-top: 20px;
+}
+
+td, th {
+    text-align: center;
+}

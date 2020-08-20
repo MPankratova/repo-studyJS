@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Basket</title>
+</head>
+<body>
+    <div class="wrapProduct">
+        <div class="product">
+            <div class="productName">Product 1</div>
+            <img src="http://unsplash.it/150/150?random&gravity=center" alt="">
+            <div>
+                <span class="productPrice">120</span>
+                <i class="fas fa-ruble-sign"></i>
+            </div>
+            <button class="toBuyBtn"
+                    data-id="1"
+                    data-price="120"
+                    data-name="Product 1">
+                Купить
+            </button>
+        </div>
+        <div class="product">
+            <div class="productName">Product 2</div>
+            <img src="http://unsplash.it/150/150?random&gravity=center" alt="">
+            <div>
+                <span class="productPrice">50</span>
+                <i class="fas fa-ruble-sign"></i>
+            </div>
+            <button class="toBuyBtn"
+                    data-id="2"
+                    data-price="50"
+                    data-name="Product 2">
+                Купить
+            </button>
+        </div>
+        <div class="product">
+            <div class="productName">Product 3</div>
+            <img src="http://unsplash.it/150/150?random&gravity=center" alt="">
+            <div>
+                <span class="productPrice">600</span>
+                <i class="fas fa-ruble-sign"></i>
+            </div>
+            <button class="toBuyBtn"
+                    data-id="3"
+                    data-price="600"
+                    data-name="Product 3">
+                Купить
+            </button>
+        </div>
+    </div>
+
+    <div class="basket">
+        <span>Корзина</span>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Имя</th>
+                    <th>Цена</th>
+                    <th>Количество</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <th>Итого:</th>
+                <td>
+                    <span class="total">0</span>
+                    <i class="fas fa-ruble-sign"></i>
+                </td>
+            </tfoot>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
