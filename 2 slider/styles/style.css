@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+
+.animation {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    position: relative;
+    animation-name: myAnimation;
+    animation-duration: 10s;
+}
+
+@keyframes myAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: calc(100% - 500px);
+    }
+}
