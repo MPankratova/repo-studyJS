@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <title>Video</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <p class="rateVideo">Оцените видео</p>
+    </div>
+    <video id="player" playsinline controls data-poster="Trees.jpg">
+        <source src="Tree.mp4" type="video/mp4" />
+    </video>
+
+
+    <div class="container rate">
+        <div class="rate">
+            <i class="far fa-thumbs-up like" data-count="0"></i>
+            <span class="score"></span>
+        </div>
+        <div class="rate">
+            <i class="far fa-thumbs-down dislike" data-count="0"></i>
+            <span class="score"></span>
+    </div>      
+    </div>
+    
+
+
+    <script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
