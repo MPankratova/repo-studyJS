@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+.container {
+    margin: 0 auto;
+    
+}
+
+
+.rateVideo, 
+.score {
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color: #008080;
+    text-align: center;
+    
+}
+
+
+.plyr {
+    max-width: 600px;
+    margin: 0 auto;
+    --plyr-color-main: #7FFFD4;
+    
+}
+
+.plyr__poster {
+    background-size: cover;
+}
+
+.rate {
+    margin-top: 50px;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+i {
+    font-size: 30px;
+    color:#7FFFD4;
+    cursor: pointer;
+}
+
+i:active {
+    animation-name: activColor;
+    animation-duration: 5s;
+}
+
+@keyframes activColor {
+    from {
+        color: #008080;
+    }
+
+    to {
+        color: #7FFFD4;
+    }
+}
